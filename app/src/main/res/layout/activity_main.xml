@@ -1,0 +1,158 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:id="@+id/mainlayout">
+
+    <RelativeLayout
+        android:id="@+id/firstcolumn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/centerlayout"
+        android:layout_centerHorizontal="true">
+
+    <RelativeLayout
+        android:id="@+id/secondcolumn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Basic Info"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/background_light"
+            android:id="@+id/basicinfobutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/background_light"
+            android:text="NomineeInfo"
+            android:id="@+id/nomineeinfobutton"
+            android:layout_below="@+id/basicinfobutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="58dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/background_light"
+            android:text="FemaleLives"
+            android:id="@+id/femalelivesbutton"
+            android:layout_below="@+id/nomineeinfobutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="58dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/background_light"
+            android:text="RFU"
+            android:id="@+id/RFUbuttton"
+            android:layout_below="@+id/femalelivesbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="58dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/thirdcolumn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/secondcolumn">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/background_light"
+            android:text="Exit"
+            android:id="@+id/exitbutton"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fourthcolumn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/thirdcolumn">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/background_light"
+            android:text="Personal Info"
+            android:id="@+id/personalinfobutton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/background_light"
+            android:text="FamilyInfo"
+            android:id="@+id/familyhistorybutton"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/personalinfobutton"
+            android:layout_marginTop="58dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/background_light"
+            android:text="PolicyInfo"
+            android:id="@+id/policyinfobutton"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/familyhistorybutton"
+            android:layout_marginTop="58dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/background_light"
+            android:text="OtherInfo"
+            android:id="@+id/otherinfobutton"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/policyinfobutton"
+            android:layout_marginTop="58dp"/>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fifthcolumn"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/centerlayout">
+
+    </RelativeLayout>
+
+    </RelativeLayout>

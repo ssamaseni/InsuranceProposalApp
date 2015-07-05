@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="android.lic.com.insuranceproposalapp.FemaleLives">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/anyoperationlayout"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/anyoperationtext"
+            android:text="Any Operation?"
+            android:layout_centerVertical="true"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/anyoperationedittext"
+            android:width="@dimen/text_field_width"
+            android:layout_toRightOf="@+id/anyoperationtext"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateofoperationlayout"
+        android:layout_below="@+id/anyoperationlayout"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateofoperationtext"
+            android:text="Date of operation"
+            android:layout_centerVertical="true"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateofoperationedittext"
+            android:width="@dimen/text_field_width"
+            android:layout_toRightOf="@+id/dateofoperationtext"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/whereithappenedlayout"
+        android:layout_below="@+id/dateofoperationlayout"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/whereithappenedtext"
+            android:text="Where it happened"
+            android:layout_centerVertical="true"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/whereithappenededittext"
+            android:width="@dimen/text_field_width"
+            android:layout_toRightOf="@+id/whereithappenedtext"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DOLDlayout"
+        android:layout_below="@+id/whereithappenedlayout"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DOLDtext"
+            android:text="DOLD"
+            android:layout_centerVertical="true"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DOLDedittext"
+            android:width="@dimen/text_field_width"
+            android:layout_toRightOf="@+id/DOLDtext"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DOLMlayout"
+        android:layout_below="@+id/DOLDlayout"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DOLMtext"
+            android:text="DOLM"
+            android:layout_centerVertical="true"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DOLMedittext"
+            android:width="@dimen/text_field_width"
+            android:layout_toRightOf="@+id/DOLMtext"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/occupationlayout"
+        android:layout_below="@+id/DOLMlayout"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/occupationtext"
+            android:text="Occupation"
+            android:layout_centerVertical="true"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/occupationedittext"
+            android:width="@dimen/text_field_width"
+            android:layout_toRightOf="@+id/occupationtext"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/incomelayout"
+        android:layout_below="@+id/occupationlayout"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/incometext"
+            android:text="Income"
+            android:layout_centerVertical="true"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/incomeedittext"
+            android:width="@dimen/text_field_width"
+            android:layout_toRightOf="@+id/incometext"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Husband Insurance Details"
+        android:textColor="@android:color/background_light"
+        android:id="@+id/husbandinsurancedetailsbutton"
+        android:background="@android:color/holo_blue_light"
+        android:layout_below="@+id/incomelayout"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:textColor="@android:color/background_light"
+        android:id="@+id/femaleslivesdonebutton"
+        android:background="@android:color/holo_blue_light"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
